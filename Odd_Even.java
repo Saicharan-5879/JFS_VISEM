@@ -1,11 +1,9 @@
 import java.util.*;
 class Odd_Even
 {
-	public static void main(String args[])
+	public static List<Integer> Order(int[]arr)
 	{
-		int []arr = {12,27,7,4,6,2,3,5,1,16};
-					Arrays.sort(arr);
-
+		Arrays.sort(arr);
 		int n = arr.length;
 		ArrayList<Integer> odd = new ArrayList<>();
 		ArrayList<Integer> even = new ArrayList<>();
@@ -22,6 +20,12 @@ class Odd_Even
 		}
 		odd.addAll(even);
 			System.out.println(odd);
+		return odd;
+	}
+	public static void main(String args[])
+	{
+		int []arr = {12,27,7,4,6,2,3,5,1,16};
+		Order(arr);
 	}
 }
 		
